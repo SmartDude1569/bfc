@@ -1,6 +1,5 @@
 use std::ops::{Add, Sub};
 
-#[derive(Debug)]
 pub(crate) struct Tape<T> {
     cells: Vec<T>,
     pointer: usize,
