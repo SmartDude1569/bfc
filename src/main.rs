@@ -1,6 +1,9 @@
 use std::env;
 use std::process;
 
+mod tape;
+use tape::Tape;
+
 fn print_help(args: &Vec<String>) {
     let bin_name = &args[0];
     println!("{} [brainfuck source file]", bin_name);
@@ -15,4 +18,5 @@ fn main() {
     }
     let src_name = &args[1];
     println!("executing {}", src_name);
+    
 }
